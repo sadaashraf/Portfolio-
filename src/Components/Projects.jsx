@@ -17,7 +17,7 @@ const Projects = () => {
       title: "Todo Application",
       image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600",
       desc: "Task management application with authentication.",
-      tech: ["React", "Firebase"]
+      tech: ["React", "NestJS", "PostgreSQL"]
     },
     {
       title: "Membership Management System",
