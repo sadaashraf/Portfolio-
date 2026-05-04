@@ -53,7 +53,7 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-2 gap-10 items-start">
 
           {/* Info */}
           <motion.div

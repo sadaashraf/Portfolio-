@@ -1,16 +1,10 @@
 import { motion } from "framer-motion";
-import { FiCode, FiServer, FiLayout, FiGithub, FiLinkedin, FiDownload } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiDownload } from "react-icons/fi";
 
 const stats = [
   { value: "6+", label: "Projects" },
   { value: "9+", label: "Technologies" },
-  { value: "1", label: "Year Experience" },
-];
-
-const stack = [
-  { icon: <FiLayout size={16} />, label: "Frontend", desc: "React, TypeScript, Tailwind CSS" },
-  { icon: <FiServer size={16} />, label: "Backend", desc: "Node.js, NestJS, Express" },
-  { icon: <FiCode size={16} />, label: "Database", desc: "MongoDB, PostgreSQL" },
+  { value: "1+", label: "Years Building" },
 ];
 
 const About = () => {
@@ -101,22 +95,9 @@ const About = () => {
               visually polished. I'm actively looking for a role where I can grow and contribute to a real product.
             </p>
 
-            <div className="grid gap-2.5">
-              {stack.map(({ icon, label, desc }) => (
-                <div
-                  key={label}
-                  className="flex items-center gap-4 p-3.5 rounded-xl bg-white/5 border border-white/5 hover:border-purple-500/30 transition"
-                >
-                  <div className="w-9 h-9 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shrink-0">
-                    {icon}
-                  </div>
-                  <div>
-                    <p className="font-semibold text-sm">{label}</p>
-                    <p className="text-xs text-gray-400">{desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <p className="text-gray-400 leading-relaxed text-sm">
+              I enjoy turning complex problems into clean, intuitive interfaces — and making sure the backend is just as solid as what users see.
+            </p>
 
             <div className="flex flex-wrap gap-3 pt-1">
               <a

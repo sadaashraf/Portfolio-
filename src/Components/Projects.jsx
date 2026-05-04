@@ -10,7 +10,6 @@ const projects = [
     desc: "Full-stack dashboard with product CRUD, stock tracking and order management. Built the React frontend and Node.js/MongoDB backend with JWT authentication.",
     tech: ["React", "Node.js", "MongoDB"],
     featured: true,
-    github: "https://github.com/sadaashraf/inventory-management-system",
     live: "https://inventory-management-system-hazel-seven.vercel.app",
   },
   {
@@ -20,6 +19,7 @@ const projects = [
     border: "border-red-500/20",
     desc: "Full-stack system for patient records, doctor scheduling and appointment booking. Built REST APIs with NestJS and managed data with PostgreSQL.",
     tech: ["React", "NestJS", "PostgreSQL"],
+    featured: true,
     github: "https://github.com/sadaashraf/-Hospital-Management-System",
   },
   {
@@ -29,6 +29,7 @@ const projects = [
     border: "border-green-500/20",
     desc: "Task manager with JWT authentication, protected routes, task CRUD and priority filtering. Deployed live on Vercel.",
     tech: ["React", "NestJS", "PostgreSQL"],
+    featured: true,
     github: "https://github.com/sadaashraf/todo",
     live: "https://todo-chi-seven-26.vercel.app",
   },
@@ -96,7 +97,7 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.07 }}
-              className={`group relative bg-[#0d1220] border ${project.border} rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-purple-500/10 transition-all duration-300`}
+              className={`group relative flex flex-col bg-[#0d1220] border ${project.border} rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-purple-500/10 transition-all duration-300 min-h-[340px]`}
             >
               {project.featured && (
                 <div className="absolute top-3 left-3 z-10 px-2.5 py-1 text-xs font-semibold bg-gradient-to-r from-purple-600 to-blue-500 rounded-full">
@@ -130,7 +131,7 @@ const Projects = () => {
                 </div>
               </div>
 
-              <div className="p-5">
+              <div className="p-5 flex flex-col flex-1">
                 <h3 className="text-sm font-bold mb-2 group-hover:text-purple-300 transition">
                   {project.title}
                 </h3>

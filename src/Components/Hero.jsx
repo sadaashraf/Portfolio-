@@ -156,12 +156,19 @@ const Hero = () => {
         className="absolute bottom-[-100px] right-[-100px] w-[500px] h-[500px] bg-blue-700 opacity-20 blur-[140px] rounded-full pointer-events-none"
       />
 
-      <div className="relative z-10 px-6 max-w-2xl mx-auto pt-28 pb-16">
+      <div className="relative z-10 px-6 max-w-2xl mx-auto pt-32 pb-4">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
+          {/* Profile photo */}
+          <div className="flex justify-center mb-6">
+            <div className="w-24 h-24 rounded-full border-2 border-purple-500/50 bg-gradient-to-br from-purple-600/30 to-blue-600/30 flex items-center justify-center text-4xl shadow-lg shadow-purple-500/20">
+              👨‍💻
+            </div>
+          </div>
+
           <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-4 tracking-tight">
             Muhammad <span className="gradient-text">Ashraf</span>
           </h1>
@@ -192,9 +199,9 @@ const Hero = () => {
 
           <div className="flex justify-center gap-3">
             {[
-              { icon: <FiGithub size={18} />, href: "https://github.com/sadaashraf", label: "GitHub" },
-              { icon: <FiLinkedin size={18} />, href: "https://www.linkedin.com/in/muhammad-ashraf-198863324/", label: "LinkedIn" },
-              { icon: <FiMail size={18} />, href: "mailto:nayeemashraf92@gmail.com", label: "Email" },
+              { icon: <FiGithub size={22} />, href: "https://github.com/sadaashraf", label: "GitHub" },
+              { icon: <FiLinkedin size={22} />, href: "https://www.linkedin.com/in/muhammad-ashraf-198863324/", label: "LinkedIn" },
+              { icon: <FiMail size={22} />, href: "mailto:nayeemashraf92@gmail.com", label: "Email" },
             ].map(({ icon, href, label }) => (
               <a
                 key={label}
@@ -202,7 +209,7 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={label}
-                className="w-10 h-10 flex items-center justify-center rounded-xl border border-white/10 text-gray-400 hover:text-white hover:border-purple-500 hover:bg-purple-500/10 transition-all duration-200"
+                className="w-12 h-12 flex items-center justify-center rounded-xl border border-white/15 text-gray-300 hover:text-white hover:border-purple-500 hover:bg-purple-500/10 transition-all duration-200"
               >
                 {icon}
               </a>
