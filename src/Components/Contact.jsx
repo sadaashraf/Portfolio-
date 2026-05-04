@@ -2,7 +2,6 @@ import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { FiMail, FiMapPin, FiSend, FiGithub, FiLinkedin, FiCheck, FiAlertCircle } from "react-icons/fi";
 import emailjs from "@emailjs/browser";
-
 // ── EmailJS config ──────────────────────────────────────────────
 // 1. Sign up free at https://www.emailjs.com
 // 2. Create a service (Gmail) → copy Service ID below
