@@ -120,28 +120,28 @@ const Contact = () => {
               <input
                 name="from_name"
                 required
-                className="col-span-2 sm:col-span-1 bg-white/5 border border-white/10 p-3 rounded-xl text-sm focus:border-purple-500 focus:bg-purple-500/5 outline-none transition placeholder:text-gray-500"
+                className="col-span-2 sm:col-span-1 bg-white/5 border border-white/10 p-3 rounded-xl text-sm text-white focus:border-purple-500 focus:bg-purple-500/5 outline-none transition placeholder:text-gray-500"
                 placeholder="Your Name"
               />
               <input
                 name="from_email"
                 type="email"
                 required
-                className="col-span-2 sm:col-span-1 bg-white/5 border border-white/10 p-3 rounded-xl text-sm focus:border-purple-500 focus:bg-purple-500/5 outline-none transition placeholder:text-gray-500"
+                className="col-span-2 sm:col-span-1 bg-white/5 border border-white/10 p-3 rounded-xl text-sm text-white focus:border-purple-500 focus:bg-purple-500/5 outline-none transition placeholder:text-gray-500"
                 placeholder="Email Address"
               />
             </div>
             <input
               name="subject"
               required
-              className="w-full bg-white/5 border border-white/10 p-3 rounded-xl text-sm focus:border-purple-500 focus:bg-purple-500/5 outline-none transition placeholder:text-gray-500"
+              className="w-full bg-white/5 border border-white/10 p-3 rounded-xl text-sm text-white focus:border-purple-500 focus:bg-purple-500/5 outline-none transition placeholder:text-gray-500"
               placeholder="Subject"
             />
             <textarea
               name="message"
               rows="5"
               required
-              className="w-full bg-white/5 border border-white/10 p-3 rounded-xl text-sm focus:border-purple-500 focus:bg-purple-500/5 outline-none transition placeholder:text-gray-500 resize-none"
+              className="w-full bg-white/5 border border-white/10 p-3 rounded-xl text-sm text-white focus:border-purple-500 focus:bg-purple-500/5 outline-none transition placeholder:text-gray-500 resize-none"
               placeholder="Your Message"
             />
 

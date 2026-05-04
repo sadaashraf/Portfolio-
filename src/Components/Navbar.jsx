@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
         <a href="#home" className="text-xl font-bold gradient-text tracking-wider">
-          Portfolio
+          Muhammad Ashraf
         </a>
 
         {/* Desktop links */}
@@ -87,6 +87,13 @@ const Navbar = () => {
               {id}
             </a>
           ))}
+          <a
+            href="#contact"
+            onClick={() => setMenuOpen(false)}
+            className="mt-2 px-4 py-2.5 text-sm font-semibold text-center bg-gradient-to-r from-purple-600 to-blue-500 rounded-lg hover:opacity-90 transition"
+          >
+            Hire Me
+          </a>
         </div>
       )}
     </nav>

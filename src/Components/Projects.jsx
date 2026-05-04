@@ -49,7 +49,7 @@ const projects = [
     border: "border-cyan-500/20",
     desc: "Donation tracking app to manage donors, campaigns and contribution records with a dashboard and real-time totals.",
     tech: ["React", "Tailwind CSS", "JavaScript"],
-    github: "https://github.com/sadaashraf",
+    github: "https://github.com/sadaashraf/donation-tracker",
   },
   {
     title: "Inventory Backend API",
